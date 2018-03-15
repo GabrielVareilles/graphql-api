@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Resolvers::SignUpUser < GraphQL::Function
   argument :input, !Types::SignUpInput
 
@@ -7,7 +9,7 @@ class Resolvers::SignUpUser < GraphQL::Function
     field :user, Types::UserType
   end
 
-  def call(_obj, args, ctx)
+  def call(_obj, args, _ctx)
     user = User.create!(
       email: args[:input][:email],
       password: args[:input][:password],
@@ -15,10 +17,7 @@ class Resolvers::SignUpUser < GraphQL::Function
     )
     token = user.authentication_token
 
-    OpenStruct.new({
-      user: user,
-      token: token
-    })
-
+    OpenStruct.new(user: user,
+                   token: token)
   end
 end

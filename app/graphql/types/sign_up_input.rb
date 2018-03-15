@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Types::SignUpInput = GraphQL::InputObjectType.define do
   name 'SignUpInput'
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Types::FavoriteType = GraphQL::ObjectType.define do
   name 'Favorite'
 
@@ -5,5 +7,5 @@ Types::FavoriteType = GraphQL::ObjectType.define do
   field :denomination, types.String
   field :codeCIS, types.Int
   field :user, -> { Types::UserType }
-  field :errors, types[types.String]
+  field :status, types.String
 end

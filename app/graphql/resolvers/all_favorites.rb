@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Resolvers::AllFavorites < GraphQL::Function
   type types[Types::FavoriteType]
 

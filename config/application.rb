@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
 require 'rails/all'
@@ -11,7 +13,7 @@ module GraphqlApi
     config.generators do |generate|
       generate.assets false
       generate.helper false
-      generate.test_framework  :test_unit, fixture: false
+      generate.test_framework :test_unit, fixture: false
     end
 
     # Initialize configuration defaults for originally generated Rails version.
@@ -23,7 +25,7 @@ module GraphqlApi
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :options]
+        resource '*', headers: :any, methods: %i[get post options]
       end
     end
   end

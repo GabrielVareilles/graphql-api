@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Resolvers::CreateFavorite < GraphQL::Function
   argument :codeCIS, types.String
   argument :denomination, types.String
@@ -14,7 +16,7 @@ class Resolvers::CreateFavorite < GraphQL::Function
     if favorite.save
       return favorite
     else
-      # TODO return error messages
+      # TODO: return error messages
       return OpenStruct.new
     end
   end

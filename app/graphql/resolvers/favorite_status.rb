@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Resolvers::DestroyFavorite < GraphQL::Function
+class Resolvers::FavoriteStatus < GraphQL::Function
   argument :id, types.ID
 
   type Types::FavoriteType
@@ -8,11 +8,8 @@ class Resolvers::DestroyFavorite < GraphQL::Function
   def call(_obj, args, _ctx)
     favorite = Favorite.find(args[:id])
     response = OpenStruct.new(favorite.attributes)
-    if favorite.destroy
-      return response
-    else
-      # TODO: return error messages
-      return OpenStruct.new
-    end
+
+    favorite.status == 'active' ? favorite.archived! : favorite.active!
+    return response
   end
 end

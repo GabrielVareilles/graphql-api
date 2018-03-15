@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.4.2'
 
@@ -21,17 +23,17 @@ gem 'graphql', '1.7.4'
 gem 'rest-client'
 
 gem 'rack-cors', require: 'rack/cors'
-gem "simple_token_authentication"
+gem 'simple_token_authentication'
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
   gem 'graphiql-rails', '1.4.4'
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :development, :test do
+  gem 'listen', '~> 3.0.5'
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end

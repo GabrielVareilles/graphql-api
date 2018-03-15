@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Types::SubstanceType = GraphQL::ObjectType.define do
   name 'Substance'
   field  :codeSubstance, types.String
@@ -9,9 +11,9 @@ Types::InteractionType = GraphQL::ObjectType.define do
   name 'Interaction'
   field :id, types.String
   field :idFamille1, types.String
-  field  :famille1, types.String
+  field :famille1, types.String
   field :idFamille2, types.String
-  field  :famille2, types.String
+  field :famille2, types.String
 end
 
 Types::PresentationType = GraphQL::ObjectType.define do
