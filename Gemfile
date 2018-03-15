@@ -17,8 +17,15 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+gem 'graphql', '1.7.4'
+gem 'rest-client'
+
+gem 'rack-cors', require: 'rack/cors'
+gem "simple_token_authentication"
+
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'graphiql-rails', '1.4.4'
 end
 
 group :development, :test do

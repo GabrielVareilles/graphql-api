@@ -1,0 +1,6 @@
+curl -i -X POST                                                              \
+     -H 'Content-Type: application/json'                                     \
+     -H 'X-User-Email: gabriel.vareilles@gmail.com'                          \
+     -H 'X-User-Token: gcb4pKXzSPp6vmeK2mf1'                                 \
+     -d '{allFavorites {    id    codeCIS  }}", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"{  allFavorites {    id    codeCIS  }}"}'  \
+     http://localhost:3000/graphql
