@@ -7,15 +7,6 @@ Types::SubstanceType = GraphQL::ObjectType.define do
   field  :dosageSubstance, types.String
 end
 
-Types::InteractionType = GraphQL::ObjectType.define do
-  name 'Interaction'
-  field :id, types.String
-  field :idFamille1, types.String
-  field :famille1, types.String
-  field :idFamille2, types.String
-  field :famille2, types.String
-end
-
 Types::PresentationType = GraphQL::ObjectType.define do
   name 'Presentation'
   field :libelle, types.String
@@ -51,6 +42,5 @@ Types::MedicineType = GraphQL::ObjectType.define do
   field :etatCommercialisation, types.Boolean
   field :presentations, types[Types::PresentationType]
   field :compositions, types[Types::CompositionType]
-  field :interactions, types[Types::InteractionType]
   field :infosImportantes, types[Types::InfosType]
 end
