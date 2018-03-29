@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Playground with Rails / graphql Api wrapping French drugs api https://www.open-medicaments.fr/swagger-ui.html
