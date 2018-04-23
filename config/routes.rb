@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require 'graphiql'
 
 Rails.application.routes.draw do
   devise_for :users
