@@ -24,9 +24,9 @@ gem 'rest-client'
 
 gem 'rack-cors', require: 'rack/cors'
 gem 'simple_token_authentication'
+gem 'graphiql-rails', '1.4.4'
 
 group :development do
-  gem 'graphiql-rails', '1.4.4'
   gem 'web-console', '>= 3.3.0'
 end
 
