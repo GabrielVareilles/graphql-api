@@ -1,3 +1,6 @@
-<div class="container">
-  <%= link_to 'graphiql', graphiql_rails_path %>
-</div>
+<% if current_user  %>
+  <%= link_to 'graphiql interface', graphiql_rails_path, target: '_blank' %>
+  <%= link_to 'github api repository','https://github.com/GabrielVareilles/graphql-api', target: '_blank' %>
+<% else %>
+
+<% end %>
