@@ -1,8 +1,8 @@
 Playground API with Rails and GraphQL Api wrapping French drugs api: [open-medicaments](https://www.open-medicaments.fr/swagger-ui.html)
 
-[GraphQL](https://github.com/GabrielVareilles/graphql-api/tree/master/app/assets/images/graphql.png)
-[Rails](https://github.com/GabrielVareilles/graphql-api/tree/master/app/assets/images/rails-logo.png)
-[Ruby](https://github.com/GabrielVareilles/graphql-api/tree/master/app/assets/images/ruby-logo.png)
+![GraphQL](https://raw.githubusercontent.com/GabrielVareilles/graphql-api/master/app/assets/images/graphql.png)
+![Rails](https://raw.githubusercontent.com/GabrielVareilles/graphql-api/master/app/assets/images/rails-logo.png)
+![Ruby](https://raw.githubusercontent.com/GabrielVareilles/graphql-api/master/app/assets/images/ruby-logo.png)
 
 This api is used for  a React & GraphQL Workshop hosted @Le Wagon Lille in may 2018.
 
